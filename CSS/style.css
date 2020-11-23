@@ -1,0 +1,263 @@
+/* TYPOGRAPHY */
+
+p {
+font-family: 'Oswald', sans-serif;
+margin-top: 0px;
+}
+
+h1 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+color: #E52464;
+font-weight: lighter;
+font-size: 50pt;
+}
+
+h2 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 30pt;
+}
+
+h3 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+color: white;
+font-weight: normal;
+}
+
+h4 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+color: #E52464;
+font-weight: lighter;
+}
+
+h5 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+font-weight: normal;
+}
+
+h6 {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+color: black;
+font-size: 24pt;
+font-weight: lighter;
+}
+
+/* Spacing between all headers*/
+h1, h2, h3, h4, h5, h6{
+margin-top:2vh;
+margin-bottom:1vh;
+}
+
+.link:hover{
+color: #E52464;
+}
+
+.introText {
+margin-top:  5vh;
+margin-left: 2vw;
+margin-right: 5vw;
+margin-bottom: auto;
+}
+
+.basicText {
+margin-top: 5vh;
+margin-left: 2vw;
+margin-right: 2vw;
+margin-bottom: auto;
+}
+
+.whiteText {
+color: white;
+}
+
+.pinkText {
+color: #E52464;
+}
+
+
+/* TITLE AND NAV BAR SPACING */
+
+.title h2 {
+margin-left: 2vw; 
+text-align: left;
+}
+
+.navbar {
+margin-left: 1vw;
+}
+
+.navbar-nav li {
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+}
+
+/* Can't seem to get nav item hover color to change*/
+.nav-link:hover {
+color: #E52464;
+}
+
+
+/* THIS SETS UP THE GRID */
+main {
+display: grid;
+grid-template-rows: 10vh 50vh 50vh;
+grid-template-columns: 50vw 50vw;
+grid-template-areas: 
+"1LArea 1RArea"
+"2LArea 2RArea"
+;}
+
+
+
+
+
+/* SIDE FLYOUT BUTTONS*/
+
+.sidenav a {
+position: absolute; /* Position them relative to the browser window */
+left: -290px; /* Position them outside of the screen */
+transition: 0.3s; /* Add transition on hover */
+padding: 20px; /* 15px padding */
+width: 400px; /* Set a specific width */
+text-decoration: none; /* Remove underline */
+font-size: 20px; /* Increase font size */
+font-family: 'Oswald', sans-serif;
+color: white; /* White text color */
+border-radius: 0 10px 10px 0; /* Rounded corners on the top right and bottom right side */
+text-align: right;
+background-color: #E52464;
+}
+
+.sidenav a:hover {
+left: 0; /* On mouse-over, make the elements appear as they should */
+background-color: #0093D5;
+}
+
+#proto {
+margin-top: 10vh;
+}
+
+#miro {
+margin-top: 20vh;
+}
+
+#slides {
+margin-top: 30vh;   
+}
+
+
+/* REVERSIBLE BUTTONS */
+
+.button {
+background-color: white;
+border: none;
+color: white;
+font-family: 'Oswald', sans-serif;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 18px;
+margin: 4px 2px;
+transition-duration: 0.3s;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.button1 {
+background-color: #E52464;
+color: white;
+border: 2px solid white;
+}
+
+.button1:hover {
+background-color: white;
+color: #E52464;
+}
+
+.button2 {
+background-color: white;
+color: #E52464;
+border: 2px solid #E52464;
+}
+
+.button2:hover {
+background-color: #E52464;
+color: white;
+}
+
+
+/* CLASSES TO CONTROL IMAGES AND TEXT 
+PLACEMENT, WIDTH, HEIGHT */
+
+.imageMax {
+max-height: 100vh;
+align-content: center;
+margin-left: 10vw;
+margin-right: auto;
+}
+
+.imageMax80 {
+max-height: 80vh;
+}
+
+.centered {
+display: flex;
+align-items: center;
+justify-content: center;
+align-content: center;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+.caption {
+text-align: center;
+width: 40vw;
+}
+
+.textCenter {
+text-align: center;
+align-items: center;
+}
+
+.maxWidth80 {
+width: 80%;
+margin-top: 3vh;
+align-items: center;
+justify-content: center;
+}
+
+.maxWidth {
+width: 100vw
+}
+
+.width100 {
+width: 100%;
+}
+
+div img {
+align-items: center;
+}
+
+.width50percent {
+width: 50%;
+}
+
+.width40 {
+width: 40vw;
+}
+
+.topitoff{
+margin-top: 5vh;
+}
+
+.basicPadding {
+padding: 5%;
+}
