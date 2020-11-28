@@ -54,24 +54,6 @@ margin-top:2vh;
 margin-bottom:1vh;
 }
 
-.link:hover{
-color: #E52464;
-}
-
-.introText {
-margin-top:  5vh;
-margin-left: 2vw;
-margin-right: 5vw;
-margin-bottom: auto;
-}
-
-.basicText {
-margin-top: 5vh;
-margin-left: 2vw;
-margin-right: 2vw;
-margin-bottom: auto;
-}
-
 .whiteText {
 color: white;
 }
@@ -79,6 +61,21 @@ color: white;
 .pinkText {
 color: #E52464;
 }
+
+.link:hover{
+color: #E52464;
+}
+
+ul {
+width: 100%;
+margin-left: auto;
+font-family: 'Oswald', sans-serif;
+}
+
+li {
+font-family: 'Oswald', sans-serif;
+}
+
 
 
 /* TITLE AND NAV BAR SPACING */
@@ -97,21 +94,95 @@ font-family: 'Oswald', sans-serif;
 text-transform: uppercase;
 }
 
-/* Can't seem to get nav item hover color to change*/
-.nav-link:hover {
-color: #E52464;
-}
 
 
 /* THIS SETS UP THE GRID */
+
 main {
 display: grid;
-grid-template-rows: 10vh 50vh 50vh;
+grid-template-rows: 50vh 50vh;
 grid-template-columns: 50vw 50vw;
 grid-template-areas: 
-"1LArea 1RArea"
-"2LArea 2RArea"
+"L01Area R01Area"
+"center02Area center02Area"
+"L03Area R03Area"
+"center04Area center04Area"
+"L05Area R05Area"
+"skillsArea skillsArea"
+"L06Area R06Area"
 ;}
+
+.L01 {
+grid-area: L01Area;
+margin-top: 15vh;
+margin-left: 10vh;
+}
+
+.R01 { 
+grid-area: R01Area;
+margin-left: 10vw;
+}
+
+.center02 {
+grid-area: center02Area;
+background-color: #E52464;
+height: 100vw;
+margin-top: 25vh;
+z-index: -1;
+}
+
+.L03 {
+grid-area: L03Area;
+margin-top: -5vh;
+}
+
+.R03 {
+grid-area: R03Area;
+margin-top: 350px;
+}
+
+.center04 {
+grid-area: center04Area;
+background-color: #E52464;
+z-index: -1;
+height: 40vh;
+width: 100vw;
+margin-top: -20vh
+}
+
+.L05 {
+grid-area: L05Area;
+}
+
+.R05 {
+grid-area: R05Area;
+}
+
+.skills {
+background-color: #E52464;
+grid-area: skillsArea;
+height: auto;
+margin-left:-10px;
+text-align: center;
+}
+
+.L06 {
+grid-area: L06Area;
+}
+
+.R06 {
+grid-area: R06Area;
+}
+
+/* ORDERING OF LAYERS */
+
+#phoneMockup {
+z-index: 1;
+}
+
+#showcase2 {
+z-index: 1;    
+}
 
 
 
@@ -128,6 +199,7 @@ width: 400px; /* Set a specific width */
 text-decoration: none; /* Remove underline */
 font-size: 20px; /* Increase font size */
 font-family: 'Oswald', sans-serif;
+font-weight: lighter;
 color: white; /* White text color */
 border-radius: 0 10px 10px 0; /* Rounded corners on the top right and bottom right side */
 text-align: right;
@@ -139,8 +211,8 @@ left: 0; /* On mouse-over, make the elements appear as they should */
 background-color: #0093D5;
 }
 
-#proto {
-margin-top: 10vh;
+#theLatest{
+margin-top: 4vh;
 }
 
 #miro {
@@ -149,6 +221,43 @@ margin-top: 20vh;
 
 #slides {
 margin-top: 30vh;   
+}
+
+#resume {
+    margin-top:5vh;
+}
+
+#linkedin {
+    margin-top: 10vh;
+}
+
+#email {
+
+}
+
+.verticalTab a{ 
+position: absolute; /* Position them relative to the browser window */
+left: -290px; /* Position them outside of the screen */
+transition: 0.3s; /* Add transition on hover */
+padding: 20px; /* 15px padding */
+width: 400px; /* Set a specific width */
+text-decoration: none; /* Remove underline */
+font-size: 20px; /* Increase font size */
+font-family: 'Oswald', sans-serif;
+font-weight: lighter;
+color: white; /* White text color */
+border-radius: 0 10px 10px 0; /* Rounded corners on the top right and bottom right side */
+text-align: right;
+background-color: #E52464;
+}  
+
+.verticalTab a:hover {
+left: 0; /* On mouse-over, make the elements appear as they should */
+background-color: #0093D5;
+}
+
+#resume {
+
 }
 
 
@@ -193,14 +302,28 @@ color: white;
 }
 
 
+
 /* CLASSES TO CONTROL IMAGES AND TEXT 
 PLACEMENT, WIDTH, HEIGHT */
 
 .imageMax {
 max-height: 100vh;
-align-content: center;
 margin-left: 10vw;
 margin-right: auto;
+}
+
+.imageMax120 {
+max-height: 120vh;
+}
+
+.maxWidth {
+width: 50vh;
+height: auto;
+}
+
+.maxHeight {
+width: auto;
+height: 100%;
 }
 
 .imageMax80 {
@@ -261,3 +384,68 @@ margin-top: 5vh;
 .basicPadding {
 padding: 5%;
 }
+
+/* Text Margins*/
+.introText {
+margin-top:  5vh;
+margin-left: 2vw;
+margin-right: 5vw;
+margin-bottom: auto;
+}
+
+.basicText {
+margin-top: 5vh;
+margin-left: 2vw;
+margin-right: 2vw;
+margin-bottom: auto;
+}
+
+.synopsis {
+width: 80%;
+text-align: left;
+}
+
+.leftMargin {
+margin-left: 10vh;
+}
+
+.rightMargin {
+margin-right: 10vw;
+}
+
+
+
+/* SKILLS in FLEXBOX */
+
+.flexContainer {
+display: flex;
+flex-direction: row;
+background-color: #E52464;
+justify-content: center;
+align-items: center;
+width: 100%
+}
+
+.flexContainer img {
+margin-right: 10%;
+margin-left: 10%;
+padding: 10px;
+width: 15vw;
+border-color: white;
+border-width: thick;
+align-items: center;
+}
+
+.skill {
+width:20%;
+}
+
+.skill p {
+color: white;
+}
+
+.skill h3 {
+font-size: 140%;
+}
+
+
