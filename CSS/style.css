@@ -114,7 +114,7 @@ grid-template-areas:
 
 .L01 {
 grid-area: L01Area;
-margin-top: 15vh;
+margin-top: 10vh;
 margin-left: 10vh;
 }
 
@@ -224,11 +224,11 @@ margin-top: 30vh;
 }
 
 #resume {
-    margin-top:5vh;
+margin-top:5vh;
 }
 
 #linkedin {
-    margin-top: 10vh;
+margin-top: 10vh;
 }
 
 #email {
@@ -449,3 +449,69 @@ font-size: 140%;
 }
 
 
+
+/* FOOTER */
+
+footer {
+display: grid;
+grid-template-rows: 6vh 6vh;
+grid-template-columns: 50vw 50vw;
+grid-template-areas: 
+"FL1Area FR1Area"
+"FL2Area FR2Area"
+;}
+
+.FL1 {
+grid-area: FL1Area;
+height: 6vh;
+}
+
+.FR1 {
+grid-area:FR1Area;
+height: 6vh;
+}
+
+.FL2 {
+grid-area: FL2Area;
+background-color: #E52464;
+height: 20vh;
+}
+
+.FR2 {
+grid-area: FR2Area;
+background-color: #E52464;
+height: 20vh;
+}
+
+.footerButton {
+border: none;
+background-color: #0093D5 
+}
+
+.footerButton:hover {
+background-color: #0071a3
+}
+
+.buttonBack {
+width: 100%;
+height: 100%;
+text-align: left;
+}
+
+.buttonBack p {
+font-size: 4vh;
+margin-left:5vw;
+align-items: center;
+}
+
+.buttonNext {
+width: 100%;
+height: 100%;
+text-align: right;
+}
+
+.buttonNext P {
+font-size: 4vh;
+margin-right: 5vw;
+text-align: right;
+}
